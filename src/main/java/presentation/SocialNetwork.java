@@ -13,11 +13,9 @@ public class SocialNetwork {
     private final static String WORKING_DIR = System.getProperty("user.dir");
     private final static String RESOURCE_DIR = WORKING_DIR + "/src/main/resources/";
     private final static String FILE_CATEGORIE_JSON = RESOURCE_DIR + "categorie_model.json";
-    private final static String FILE_EVENTI_JSON = RESOURCE_DIR + "/eventi.json";
 
     public SocialNetwork() {
         caricaCategorieDaFileJSON();
-        caricaEventiDaFileJSON();
         aggiungiVociCategorieAlMenuTestuale();
     }
 
@@ -30,7 +28,7 @@ public class SocialNetwork {
 
             if(opzioneScelta < categorieEventi.size() && opzioneScelta >= 0) {
                 Categoria categoriaScelta = categorieEventi.get(opzioneScelta);
-                mostraCaratteristicheCategoria(categoriaScelta);
+                mostraCaratteristiche(categoriaScelta);
             }
 
         }while(opzioneScelta != -1);
@@ -45,18 +43,12 @@ public class SocialNetwork {
         JSONDeserializer<Categoria> deserializer = new JSONDeserializer<>(FILE_CATEGORIE_JSON);
         List<Categoria> categorieDaFileJson = deserializer.deserializzaElenco(Categoria.class);
         categorieEventi = new ArrayList<>(categorieDaFileJson);
+        System.out.println(categorieEventi.size());
     }
 
-    private void caricaEventiDaFileJSON(){
-        JSONDeserializer<Evento> deserializer = new JSONDeserializer<>(FILE_EVENTI_JSON);
-        List<Evento> eventiDaFileJson = deserializer.deserializzaElenco(Evento.class);
-        categorieEventi.get(0).aggiungiEvento(eventiDaFileJson.get(0));
-    }
-
-    private void mostraCaratteristicheCategoria(Categoria categoria){
+    public void mostraCaratteristiche(Categoria categoria){
         interfacciaTestuale.stampa("\n");
-        interfacciaTestuale.stampa(categoria.getNome() + ": " + categoria.getDescrizione());
-        interfacciaTestuale.stampa(categoria.visualizzaEventi());
+        interfacciaTestuale.stampa(categoria.toString());
     }
 
     private void aggiungiVociCategorieAlMenuTestuale(){

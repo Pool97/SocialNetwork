@@ -43,4 +43,8 @@ public class Campo<T> {
     public void setValore(T valore) {
         this.valore = valore;
     }
+
+    public String mostraInformazioni(){
+        return nome + ": " + descrizione;
+    }
 }

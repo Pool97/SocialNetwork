@@ -1,18 +1,37 @@
 package presentation;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @JsonTypeInfo(
         use = JsonTypeInfo.Id.NAME,
         property = "type"
 )
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = PartitaDiCalcio.class, name = "partitadicalcio")
+}
+)
 public class Categoria {
 
     private String nome;
     private String descrizione;
-    private ArrayList<Evento> eventi;
+
+    private Campo<String> titolo;
+    private Campo<Integer> numeroPartecipanti;
+    private Campo<LocalDate> termineIscrizione;
+    private Campo<String> luogo;
+    private Campo<LocalDate> data;
+    private Campo<LocalTime> ora;
+    private Campo<LocalDateTime> durata;
+    private Campo<Integer> quotaIndividuale;
+    private Campo<String> compresoNellaQuota;
+    private Campo<LocalDate> dataConclusiva;
+    private Campo<LocalTime> oraConclusiva;
+    private Campo<String> note;
 
     public Categoria(){
 
@@ -21,7 +40,6 @@ public class Categoria {
     public Categoria(String nome, String descrizione) {
         this.nome = nome;
         this.descrizione = descrizione;
-        eventi = new ArrayList<>();
     }
 
     public Categoria(String nome) {
@@ -44,24 +62,20 @@ public class Categoria {
         this.descrizione = descrizione;
     }
 
-    public ArrayList<Evento> getEventi() {
-        return eventi;
-    }
-
-    public void aggiungiEvento(Evento evento){
-        eventi.add(evento);
-    }
-
-
-    public String visualizzaEventi(){
-        if (eventi.size() == 0)
-            return "Non ci sono eventi al momento";
-
-        StringBuilder sb = new StringBuilder();
-
-        for(Evento evento : eventi)
-            sb.append(evento).append("\n");
-
-        return sb.toString();
+    @Override
+    public String toString() {
+        return nome + ": " + descrizione + "\n" +
+                titolo.mostraInformazioni() + "\n" +
+                numeroPartecipanti.mostraInformazioni() + "\n" +
+                termineIscrizione.mostraInformazioni() + "\n" +
+                luogo.mostraInformazioni() + "\n" +
+                data.mostraInformazioni() + "\n" +
+                ora.mostraInformazioni() + "\n" +
+                durata.mostraInformazioni() + "\n"+
+                quotaIndividuale.mostraInformazioni() + "\n" +
+                compresoNellaQuota.mostraInformazioni() + "\n" +
+                dataConclusiva.mostraInformazioni() + "\n" +
+                oraConclusiva.mostraInformazioni() + "\n" +
+                note.mostraInformazioni() + "\n";
     }
 }

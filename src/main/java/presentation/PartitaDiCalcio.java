@@ -1,6 +1,6 @@
 package presentation;
 
-public class PartitaDiCalcio extends Evento {
+public class PartitaDiCalcio extends Categoria {
 
     private Campo<Genere> genere;
     private Campo<FasciaEta> fasciaEtà;
@@ -12,7 +12,6 @@ public class PartitaDiCalcio extends Evento {
     @Override
     public String toString() {
         return super.toString() +
-                genere.getNome() + ": "+  genere.getValore() + "\n" +
-                fasciaEtà.getNome() + ": " + fasciaEtà.getValore();
+                genere.mostraInformazioni() + "\n" + fasciaEtà.mostraInformazioni();
     }
 }
