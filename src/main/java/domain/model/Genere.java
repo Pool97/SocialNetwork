@@ -1,4 +1,4 @@
-package presentation;
+package domain.model;
 
 public enum Genere {
     Maschio,Femmina

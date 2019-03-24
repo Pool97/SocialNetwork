@@ -1,6 +1,6 @@
-package presentation;
+package domain.model;
 
-public class Campo<T> {
+public class Campo<T>{
 
     private String nome;
     private String descrizione;
@@ -45,6 +45,6 @@ public class Campo<T> {
     }
 
     public String mostraInformazioni(){
-        return nome + ": " + descrizione;
+        return nome + ": " + valore;
     }
 }

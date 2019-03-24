@@ -1,5 +1,7 @@
 package service.mylib;
 
+import domain.model.Genere;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -96,6 +98,7 @@ public class InputDati
 	     try
 	      {
 	       valoreLetto = lettore.nextInt();
+	       lettore.nextLine();
 	       finito = true;
 	      }
 	     catch (InputMismatchException e)
@@ -164,6 +167,7 @@ public class InputDati
 	     try
 	      {
 	       valoreLetto = lettore.nextDouble();
+	       lettore.nextLine();
 	       finito = true;
 	      }
 	     catch (InputMismatchException e)
@@ -191,7 +195,21 @@ public class InputDati
 	   return valoreLetto;
 	  }
 
-	  
+	public static Genere leggiEnum (String messaggio) {
+		boolean finito = false;
+		String valoreLetto;
+		do {
+			System.out.print(messaggio);
+			valoreLetto = leggiStringaNonVuota(messaggio);
+			for (Genere gen : Genere.values()) {
+				if (valoreLetto.equals(gen.name())) {
+					finito = true;
+				}
+			}
+		} while (!finito);
+		return Genere.valueOf(valoreLetto);
+	}
+
 	  public static boolean yesOrNo(String messaggio)
 	  {
 		  String mioMessaggio = messaggio + "("+RISPOSTA_SI+"/"+RISPOSTA_NO+")";

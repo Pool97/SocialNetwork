@@ -1,7 +1,8 @@
-package presentation;
+package domain.model;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import ui.Visitable;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -12,10 +13,11 @@ import java.time.LocalTime;
         property = "type"
 )
 @JsonSubTypes({
-        @JsonSubTypes.Type(value = PartitaDiCalcio.class, name = "partitadicalcio")
+        @JsonSubTypes.Type(value = PartitaDiCalcio.class, name = "Partita di Calcio")
 }
 )
-public class Categoria {
+
+public abstract class Categoria implements Visitable {
 
     private String nome;
     private String descrizione;
@@ -62,9 +64,45 @@ public class Categoria {
         this.descrizione = descrizione;
     }
 
+    public Campo<LocalDate> getTermineIscrizione() {
+        return termineIscrizione;
+    }
+
+    public Campo<Integer> getNumeroPartecipanti() {
+        return numeroPartecipanti;
+    }
+
+    public Campo<String> getTitolo() {
+        return titolo;
+    }
+
+    public void setTitolo(String titolo) {
+        this.titolo.setValore(titolo);
+    }
+
+    public void setNumeroPartecipanti(int numeroPartecipanti) {
+        this.numeroPartecipanti.setValore(numeroPartecipanti);
+    }
+
+    public void setLuogo(String luogo) {
+        this.luogo.setValore(luogo);
+    }
+
+    public Campo<String> getLuogo() {
+        return luogo;
+    }
+
+    public Campo<Integer> getQuotaIndividuale() {
+        return quotaIndividuale;
+    }
+
+    public void setQuotaIndividuale(int quotaIndividuale) {
+        this.quotaIndividuale.setValore(quotaIndividuale);
+    }
+
     @Override
     public String toString() {
-        return nome + ": " + descrizione + "\n" +
+        return
                 titolo.mostraInformazioni() + "\n" +
                 numeroPartecipanti.mostraInformazioni() + "\n" +
                 termineIscrizione.mostraInformazioni() + "\n" +

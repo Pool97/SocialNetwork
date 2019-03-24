@@ -1,89 +1,89 @@
 [
   {
-    "type" : "partitadicalcio",
-    "nome" : "Partita di calcio",
+    "type" : "Partita di Calcio",
+    "nome" : "Partita di Calcio",
     "descrizione" : "Evento calcistico!",
     "titolo" : {
       "nome" : "Titolo",
-      "descrizione" : "Nome di fantasia per l'evento.",
+      "descrizione" : "il nome di fantasia per l'evento.",
       "valore" : "",
       "obbligatorio" : false
     },
     "numeroPartecipanti" : {
       "nome" : "Numero di partecipanti",
-      "descrizione" : "Numero di persone da coinvolgere nell'evento.",
+      "descrizione" : "il numero di persone da coinvolgere nell'evento.",
       "valore" : 0,
       "obbligatorio" : false
     },
     "termineIscrizione" : {
       "nome" : "Termine iscrizione",
-      "descrizione" : "L'ultimo giorno utile per iscriversi all'evento.",
+      "descrizione" : "l'ultimo giorno utile per iscriversi all'evento.",
       "valore" : [],
       "obbligatorio" : false
     },
     "luogo" : {
       "nome" : "Luogo evento",
-      "descrizione" : "Indirizzo dello stadio che ospiterà l'evento.",
+      "descrizione" : "l'indirizzo dello stadio che ospiterà l'evento.",
       "valore" : "",
       "obbligatorio" : true
     },
     "data" : {
       "nome" : "Data",
-      "descrizione" : "Data dello svolgimento della partita.",
+      "descrizione" : "data dello svolgimento della partita.",
       "valore" : [],
       "obbligatorio" : true
     },
     "ora" : {
       "nome" : "Ora",
-      "descrizione" : "L'ora di ritrovo dei partecipanti.",
+      "descrizione" : "l'ora di ritrovo dei partecipanti.",
       "valore" : [],
       "obbligatorio" : true
     },
     "durata" : {
       "nome" : "Durata",
-      "descrizione" : "Durata (approssimativa) dell'evento.",
+      "descrizione" : "durata (approssimativa) dell'evento.",
       "valore" : [],
       "obbligatorio" : false
     },
     "quotaIndividuale" : {
       "nome" : "Quota individuale",
-      "descrizione" : "Spesa che ogni partecipante dovrà sostenere.",
+      "descrizione" : "spesa che ogni partecipante dovrà sostenere.",
       "valore" : 0,
       "obbligatorio" : true
     },
     "compresoNellaQuota" : {
       "nome" : "Compreso nella quota",
-      "descrizione" : "Le voci di spesa comprese nella quota individuale.",
+      "descrizione" : "le voci di spesa comprese nella quota individuale.",
       "valore" : "",
       "obbligatorio" : false
     },
     "dataConclusiva" : {
       "nome" : "Data conclusiva",
-      "descrizione" : "Data di conclusione dell'evento.",
+      "descrizione" : "la data di conclusione dell'evento.",
       "valore" : [],
       "obbligatorio" : false
     },
     "oraConclusiva" : {
       "nome" : "Ora conclusiva",
-      "descrizione" : "L'ora conclusiva dell'evento.",
+      "descrizione" : "l'ora conclusiva dell'evento.",
       "valore" : [],
       "obbligatorio" : false
     },
     "note" : {
       "nome" : "Nota",
-      "descrizione" : "Informazioni aggiuntive sull'evento",
+      "descrizione" : "informazioni aggiuntive sull'evento",
       "valore" : "",
       "obbligatorio" : false
     },
     "genere" : {
       "nome" : "Genere",
-      "descrizione" : "Il genere dei giocatori.",
+      "descrizione" : "il genere dei giocatori. (Maschio/Femmina)",
       "valore" : "Maschio",
       "obbligatorio" : true
     },
     "fasciaEtà" : {
       "nome" : "Fascia di età",
-      "descrizione" : "La fascia di età dei giocatori.",
+      "descrizione" : "la fascia di età dei giocatori.",
       "valore" : {
         "etaMinima" : 0,
         "etaMassima" : 0

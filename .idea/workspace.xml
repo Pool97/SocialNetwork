@@ -1,27 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c7bc75c-c58f-4ce3-9013-6232acf6b9fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/socialnetwork.social-network.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/socialnetwork.social-network.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/socialnetwork.social-network.test.iml" afterDir="false" />
+    <list default="true" id="6c7bc75c-c58f-4ce3-9013-6232acf6b9fb" name="Default Changelist" comment="Miglioramento progettazione della prima versione dei requisiti.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controller/BachecaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controller/CategorieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controller/FruitoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controller/Social.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/ArchiviatoreProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/ArchivioProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/BachecaProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/CategorieProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/CreatoreProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/GestoreProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/eventi/PubblicatoreProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/Bacheca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/Fruitore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/PartitaDiCalcio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/Proposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/PropostaAperta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/PropostaChiusa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/PropostaFallita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/PropostaValida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/SpazioPersonale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/model/Stato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/BachecaPersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/CategoriePersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/CronologiaPersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/CustomObjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/FruitoreModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/FruitoreSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/NotificheRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/integration/ProposteValidePersistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/CreazioneProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/GestioneNotifiche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MenuAdesioneProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MenuCategorieBacheca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MenuCreazioneProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MenuPrincipale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MenuPubblicazioneProposta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/MyMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/OpzioneMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Visitable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bacheca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/credenziali.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fruitori.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/history.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/notifiche.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proposte_valide.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/presentation/Categoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/Evento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/PartitaDiCalcio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/presentation/PartitaDiCalcio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/SocialNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/presentation/SocialNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/service/mylib/BelleStringhe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/mylib/BelleStringhe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/Campo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/Categoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/FasciaEta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/Genere.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/InterfacciaTestuale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/PartitaDiCalcio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/presentation/SocialNetwork.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/service/mylib/InputDati.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/mylib/InputDati.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/mylib/MyMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/categorie_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/categorie_model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/eventi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/Campo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Evento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/PartitaDiCalcio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/PartitaDiCalcio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Campo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/FasciaEta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/FasciaEta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Genere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Genere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/InterfacciaTestuale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/PartitaDiCalcio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/mylib/InputDati.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/mylib/InputDati.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/mylib/MyMenu.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/categorie_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/categorie_model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/eventi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/partita_model.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,19 +87,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/categorie_model.json">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/BachecaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+            <state relative-caret-position="666">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+              <folding>
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/integration/BachecaPersistence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/integration/ProposteValidePersistence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+            <state relative-caret-position="468">
+              <caret line="31" column="99" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,10 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Categoria.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/Social.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="494">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,13 +136,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Campo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/GestoreProposta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="54">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Bacheca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
               <folding>
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,6 +164,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -108,40 +183,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Prova.java" />
-        <option value="$PROJECT_DIR$/evento.json" />
-        <option value="$PROJECT_DIR$/src/main/java/src/Partita.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/EventoDeserializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/PartitaDiCalcio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/RuntimeAdapterFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/RuntimeTypeAdapterFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/CategoriaDeserializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/periodoDiTempo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/PeriodoDiTempo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/SocialNetworkMain.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/model.json" />
-        <option value="$PROJECT_DIR$/partita.json" />
-        <option value="$PROJECT_DIR$/output.json" />
-        <option value="$PROJECT_DIR$/src/main/java/src/Campo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/PartitaDiCalcio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/EventoJSONDeserializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/Categoria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/FasciaEta.java" />
-        <option value="$PROJECT_DIR$/categorie_model.json" />
-        <option value="$PROJECT_DIR$/src/main/java/src/SocialNetwork.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/InterfacciaTestuale.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mylib/MyMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/JSONDeserializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/src/Evento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/mylib/ServizioFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/mylib/BelleStringhe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation/Evento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Social.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MenuPrincipale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Fruitore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Bacheca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/CronologiaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/PropostaChiusa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Fruitore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/BachecaSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/PropostaAperta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/PropostaValida.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/VisualizzazioneBacheca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/controller/CategorieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/ArchiviatoreProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/ProposteProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/ArchivioProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/PubblicatoreProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/BachecaProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/VisualizzazioneCategorie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/ProposteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MyMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/PubblicazioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/CategorieProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/CategorieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/categorie_model.json" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation/Campo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation/PartitaDiCalcio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation/Categoria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/SottoMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/GestioneNotifiche.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MenuCreazioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/PartitaDiCalcio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MenuPubblicazioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/CreazioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/mylib/InputDati.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/NotificheRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/CustomObjectMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Stato.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bacheca.json" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/CategoriePersistence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/CronologiaPersistence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MenuCategorieBacheca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Campo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/BachecaPersistence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Categoria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/eventi/GestoreProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Proposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/model/Bacheca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/OpzioneAdesioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/MenuAdesioneProposta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/controller/BachecaController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/controller/FruitoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/controller/Social.java" />
+        <option value="$PROJECT_DIR$/src/main/java/integration/ProposteValidePersistence.java" />
       </list>
     </option>
   </component>
@@ -153,9 +245,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="301" />
     <option name="y" value="25" />
-    <option name="width" value="960" />
-    <option name="height" value="1055" />
+    <option name="width" value="1900" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,7 +288,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
@@ -203,7 +296,42 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mylib" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="eventi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetwork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
@@ -222,7 +350,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552343369842" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553453277586" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -253,15 +381,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="SocialNetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Social">
+    <configuration name="Social" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="presentation.SocialNetwork" />
+      <option name="MAIN_CLASS_NAME" value="domain.controller.Social" />
       <module name="socialnetwork.social-network.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="presentation.*" />
+          <option name="PATTERN" value="domain.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocialNetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="domain.SocialNetwork" />
+      <module name="socialnetwork.social-network.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.SocialNetwork" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="System" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="domain.System" />
+      <module name="socialnetwork.social-network.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -280,6 +438,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Social" />
+        <item itemvalue="Application.System" />
         <item itemvalue="Application.SocialNetwork" />
       </list>
     </recent_temporary>
@@ -309,7 +469,22 @@
       <workItem from="1552227592756" duration="3283000" />
       <workItem from="1552230894588" duration="1693000" />
       <workItem from="1552311632225" duration="3954000" />
-      <workItem from="1552338284950" duration="4088000" />
+      <workItem from="1552338284950" duration="4242000" />
+      <workItem from="1552762358550" duration="60000" />
+      <workItem from="1552762473163" duration="2360000" />
+      <workItem from="1552836983716" duration="12003000" />
+      <workItem from="1552940117933" duration="7670000" />
+      <workItem from="1553087236865" duration="4582000" />
+      <workItem from="1553099797282" duration="4156000" />
+      <workItem from="1553115132242" duration="4952000" />
+      <workItem from="1553157769506" duration="591000" />
+      <workItem from="1553178939840" duration="8247000" />
+      <workItem from="1553205315845" duration="1467000" />
+      <workItem from="1553239284641" duration="1546000" />
+      <workItem from="1553272467046" duration="10517000" />
+      <workItem from="1553354569405" duration="10688000" />
+      <workItem from="1553377419403" duration="2058000" />
+      <workItem from="1553445258588" duration="4930000" />
     </task>
     <task id="LOCAL-00001" summary="Prima versione del progetto.">
       <created>1552230833223</created>
@@ -332,17 +507,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552232547907</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Miglioramento progettazione della prima versione dei requisiti.">
+      <created>1552343425970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552343425970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59778000" />
+    <option name="totallyTimeSpent" value="135759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13031915" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19680852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -351,7 +533,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994681" weight="0.6" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994681" weight="0.38930482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -431,226 +613,457 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Prima versione del progetto." />
-    <option name="LAST_COMMIT_MESSAGE" value="Prima versione del progetto." />
+    <MESSAGE value="Miglioramento progettazione della prima versione dei requisiti." />
+    <option name="LAST_COMMIT_MESSAGE" value="Miglioramento progettazione della prima versione dei requisiti." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prova.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/Partita.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/EventoDeserializer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/RuntimeTypeAdapterFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/CategoriaDeserializer.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/reflect/TypeToken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/SpazioPersonale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="309" column="29" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#9533#9534#0" expanded="true" />
-            <element signature="e#9572#9573#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/Visitable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="520" selection-start-line="520" selection-end-line="520" />
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/PropostaValida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        <state relative-caret-position="90">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/src/PeriodoDiTempo.java" />
-    <entry file="file://$PROJECT_DIR$/partita.json" />
-    <entry file="file://$PROJECT_DIR$/evento.json" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/d0d412f71000701f765e1e280764e92337c659f5/jackson-annotations-2.7.0-sources.jar!/com/fasterxml/jackson/annotation/JsonTypeInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Fruitore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="109" column="8" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/integration/JSONDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="342">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/FasciaEta.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/PropostaChiusa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Genere.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/ArchivioProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/EstrazioniCasuali.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/CategorieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/ArchiviatoreProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/BachecaProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/VisualizzazioneCategorie.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/CategorieProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/GestioneNotifiche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/SottoMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MenuCreazioneProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/InputDati.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="-2714">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/ServizioFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/CreazioneProposta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="918">
+          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/NumeriCasuali.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/NotificheRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/MyMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/PubblicatoreProposta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/mylib/BelleStringhe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/BachecaSerializer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MenuPubblicazioneProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/PartitaDiCalcio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Stato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/CategoriePersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="121" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/FruitoreSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/CronologiaPersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/OpzioneMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MenuPrincipale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/InterfacciaTestuale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/eventi.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/partita_model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="89" column="1" selection-end-line="89" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/categorie_model.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+        <state relative-caret-position="1422">
+          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/PartitaDiCalcio.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MenuCategorieBacheca.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Campo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MyMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#842#843#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/PropostaAperta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bacheca.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Campo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#841#842#0" expanded="true" />
             <element signature="e#889#890#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/Categoria.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Categoria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="476">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation/SocialNetwork.java">
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        <state relative-caret-position="200">
+          <caret line="495" column="19" selection-start-line="495" selection-start-column="19" selection-end-line="495" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Proposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2121#2122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/eventi/GestoreProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/MenuAdesioneProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/BachecaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proposte_valide.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/FruitoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding>
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/controller/Social.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/OpzioneAdesioneProposta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proposte_valide.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/proposte_valide.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/model/Bacheca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/CustomObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/BachecaPersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/integration/ProposteValidePersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="31" column="99" selection-start-line="31" selection-start-column="99" selection-end-line="31" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
